@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para colocar el menú y el contenido */
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 20px;
+    width: 200px;
+    min-height: 100vh; /* Altura mínima del menú para que se extienda hasta abajo */
+  }
+
+  .menu-contenido {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu-contenido:hover {
+    background-color: #555;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1; /* Hacemos que el contenedor de contenido ocupe todo el espacio restante */
+  }
+
+  .contenido {
+    background-color: #ddd;
+    width: 48%; /* Ancho de cada bloque */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    margin-bottom: 20px;
+    padding: 10px;
+  }
